@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Notes Summarizer | EDUMATE</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="summarizer-body">
+    <div class="navbar">
+      <h2>📘 Smart Notes Summarizer</h2>
+      <a href="dashboard.html" class="back-btn">🏠 Back to Dashboard</a>
+    </div>
+
+    <div class="summarizer-container">
+      <div class="upload-section">
+        <h3>Upload Your Notes or PDF</h3>
+        <p>Select your study material, and EDUMATE will generate a concise summary.</p>
+        <input type="file" id="fileInput" accept=".pdf,.txt,.docx" />
+        <button id="uploadBtn">Upload & Summarize</button>
+      </div>
+
+      <div class="summary-section">
+        <h3>📄 Generated Summary</h3>
+        <div id="summaryOutput">
+          <p>No summary yet. Upload a file to get started.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

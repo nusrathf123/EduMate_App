@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EDUMATE | Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="dashboard-body">
+  <nav class="navbar">
+    <div class="assets/LOGO (2 )">EDUMATE</div>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </nav>
+
+  <section class="dashboard-container">
+    <h1>Welcome to Your Dashboard 🎓</h1>
+    <p>Select a module to get started:</p>
+
+    <div class="dashboard-grid">
+      <div class="card" onclick="navigate('planner.html')">
+        <h3>📅 AI Study Planner</h3>
+        <p>Plan and track your study schedule efficiently.</p>
+      </div>
+
+      <div class="card" onclick="navigate('summarizer.html')">
+        <h3>📝 Smart Notes Summarizer</h3>
+        <p>Get concise summaries from your notes or PDFs.</p>
+      </div>
+
+      <div class="card" onclick="navigate('quiz.html')">
+        <h3>🧠 Quiz Generator</h3>
+        <p>Generate smart quizzes from your materials.</p>
+      </div>
+
+      <div class="card" onclick="navigate('gamified.html')">
+        <h3>🏆 Gamified Learning</h3>
+        <p>Earn points and rewards for consistent study.</p>
+      </div>
+
+      <div class="card" onclick="navigate('career.html')">
+        <h3>🎯 Career Guidance</h3>
+        <p>AI-powered suggestions for your future goals.</p>
+      </div>
+
+      <div class="card" onclick="navigate('chatbot.html')">
+        <h3>💬 AI Study Assistant</h3>
+        <p>Ask questions and clear doubts instantly.</p>
+      </div>
+
+      <div class="card" onclick="navigate('voiceToText.html')">
+        <h3>🎤 Voice to Notes</h3>
+        <p>Convert lectures and videos into text notes.</p>
+      </div>
+
+      <div class="card" onclick="navigate('resourceFinder.html')">
+        <h3>🔍 Smart Resource Finder</h3>
+        <p>Find accurate and verified learning materials.</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

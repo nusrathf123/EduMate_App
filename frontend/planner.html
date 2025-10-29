@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EDUMATE | AI Study Planner</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="planner-body">
+  <nav class="navbar">
+    <div class="assets/LOGO (2).png">📚 EDUMATE - AI Study Planner</div>
+    <button class="logout-btn" onclick="navigate('dashboard.html')">🏠 Back to Dashboard</button>
+  </nav>
+
+  <section class="planner-container">
+    <!-- LEFT SIDE: CALENDAR -->
+    <div class="planner-left">
+      <h2>📅 Study Calendar</h2>
+      <div class="calendar">
+        <div class="calendar-header">
+          <button id="prev-month">&lt;</button>
+          <span id="month-year"></span>
+          <button id="next-month">&gt;</button>
+        </div>
+        <div class="calendar-days"></div>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE: TASKS -->
+    <div class="planner-right">
+      <h2 id="task-title">Tasks for <span id="selected-date"></span></h2>
+
+      <div class="add-task">
+        <input type="text" id="task-input" placeholder="Add a new task..." />
+        <input type="datetime-local" id="deadline-input" />
+        <button onclick="addTask()">Add</button>
+      </div>
+
+      <ul id="task-list"></ul>
+
+      <div class="progress-section">
+        <p>Today's Progress</p>
+        <div class="progress-bar">
+          <div id="progress-fill"></div>
+        </div>
+      </div>
+
+      <div id="daily-quote" class="quote-box"></div>
+
+      <button class="clear-btn" onclick="clearTasks()">🗑️ Clear All Tasks</button>
+    </div>
+  </section>
+
+  <!-- Notification Container -->
+  <div class="notification-container" id="notification-container"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
